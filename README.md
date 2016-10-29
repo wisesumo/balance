@@ -1,4 +1,4 @@
-# BALANCE: Conversational Commerce Made Easy
+# BALANCE: eCommerce Analytics Simplified
 
-BALANCE: The <i>fastest way<i> for online merchants to offer a personalized customer
-engagement and sales experience via text messaging.
+BALANCE: The <i>fastest way<i> for online merchants to gather and unlock
+numbers that drive increased customer engagement and sales.
