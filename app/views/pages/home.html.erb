@@ -1,26 +1,38 @@
-<div class="jumbotron jumbotron-home">
+<% if user_signed_in? %>
+
+    <div class="jumbotron jumbotron-home">
+      <div class="container">
+            <h1>Welcome back!</h1>
+      </div>
+    </div>
+
+<% else %>
+
+    <div class="jumbotron jumbotron-home">
+        <div class="container">
+            <h1>Numbers That Grow Your Store</h1>
+            <p>When you connect your store with Shopify, Magento, WooCommerce, or BigCommerce, you can create reports, automate targeted customer follow-ups, and daily recommend actions that your customers will love.</p>
+            <%= link_to "Learn more »", "#", class: "btn btn-primary btn-lg" %>
+        </div>
+    </div>
     <div class="container">
-        <h1>Personalize Your Customer Experiences</h1>
-        <p>When you connect your store with Shopify, Magento, WooCommerce, or BigCommerce, you can create targeted text messaging communications, automate helpful product follow-ups, and daily recommend products that your customers will love.</p>
-        <%= link_to "Learn more »", "#", class: "btn btn-primary btn-lg" %>
-    </div>
-</div>
-<div class="container">
-    <div class="row">
-        <div class="col-md-4">
-            <h2>Timesaving Automation</h2>
-            <p>Automatically schedule a campaign to send at the same time in different time zones. </p>
-            <p><%= link_to "Learn More", "#", class: "btn btn-secondary" %></p>
-        </div>
-        <div class="col-md-4">
-            <h2>Simplifed Segmentation</h2>
-            <p>Specify your efforts on lapsed customers, VIPs, and more—all based on purchase data. </p>
-            <p><%= link_to "Learn More", "#", class: "btn btn-secondary" %></p>
-        </div>
-        <div class="col-md-4">
-            <h2>Detailed Reporting</h2>
-            <p>Monitor your revenue reports to see what’s working and how you can get better. </p>
-            <p><%= link_to "View details", "#", class: "btn btn-secondary" %></p>
+        <div class="row">
+            <div class="col-md-4">
+                <h2>Timesaving Automation</h2>
+                <p>Automatically schedule a campaign to send at the same time in different time zones. </p>
+                <p><%= link_to "Learn More", "#", class: "btn btn-secondary" %></p>
+            </div>
+            <div class="col-md-4">
+                <h2>Simplifed Segmentation</h2>
+                <p>Specify your efforts on lapsed customers, VIPs, and more—all based on purchase data. </p>
+                <p><%= link_to "Learn More", "#", class: "btn btn-secondary" %></p>
+            </div>
+            <div class="col-md-4">
+                <h2>Detailed Reporting</h2>
+                <p>Monitor your revenue reports to see what’s working and how you can get better. </p>
+                <p><%= link_to "View details", "#", class: "btn btn-secondary" %></p>
+            </div>
         </div>
     </div>
-</div>
+
+<% end %>

@@ -12,6 +12,13 @@
     <!-- Navigation Bar -->
     <%= render 'layouts/navbar' %>
 
+    <!-- Flash Messages -->
+      <div class="container">
+        <% flash.each do |name, message| %>
+        <%= content_tag(:div, message, class: "alert alert-info #{name}") %>
+        <% end %>
+      </div>
+      
     <!-- Page Content -->
     <%= yield %>
 
